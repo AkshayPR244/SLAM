@@ -1,7 +1,4 @@
 import numpy as np
-import random
-import math
-from Robot import robot 
 
 def expand(mat,dimx, dimy, list1, list2 = []):
         if list2 == []:
@@ -66,6 +63,9 @@ def graph_slam(data, N, num_landmarks, motion_noise, measurement_noise):
     return mu, w 
 
 #test
+import random
+import math
+from Robot import robot 
 
 num_landmarks      = 5        # number of landmarks
 N                  = 20       # time steps
